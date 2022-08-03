@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>gamo</title>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+}
+#rabbitone{
+height:50px;
+width:50px;
+background-color:green;
+position:relative;
+top:300px;
+left:50px|;
+animation-name:abdou;
+animation-duration:10s;
+animation-iteration-count:infinte;
+transform:rotate(120deg);
+
+}
+
+}
+#one{
+height:60px;
+width:500px;
+background-color:#333;
+transform:rotate(-30deg);
+margin-left:-150px;
+color:white;
+display:none;
+}
+#border{
+height:500px;
+width:350px;
+border:1px solid black;
+margin-top:10px;
+}
+#title{
+height:60px;
+width:100%;
+background-color:#dfdfdf;
+}
+#ssa{
+position:relative;
+display:flex;
+}
+#dolar{
+position:relative;
+left:200px;
+color:#333;
+}
+#timer{
+position:relative;
+left:5px;
+}
+.continer{
+height:100px;
+width:100%;
+background-color:#dfdfdf;
+display:flex;
+padding:10px;
+
+}
+#itemA{
+height:60px;
+width:100px;
+background-color:#444;
+padding:5px;
+border-radius:5px;
+border-bottom:5px solid red ;
+margin-top:10px;
+position:relative;
+right:5px;
+color:red;
+}
+#itemB{
+height:60px;
+width:100px;
+background-color:#444;
+padding:5px;
+border-radius:5px;
+border-bottom:5px solid red ;
+margin-top:10px;
+color:red;
+}
+#itemC{
+height:60px;
+width:100px;
+background-color:#444;
+padding:5px;
+border-radius:5px;
+border-bottom:5px solid red ;
+margin-top:10px;
+position:relative;
+left:5px;
+color:red;
+}
+#health{
+position:relative;
+left:80px;
+}
+</style>
+</head>
+<body>
+<center>
+<div id="title">
+<h1>Test game</h1>
+<div id="ssa">
+<p class="">time : </p><span id="timer"><span id="minut">00</span>:<span id="second">00</span></span>
+<p id="health">1000</p>
+<p id="dolar">0000</p>
+</div>
+</div>
+<div id="border">
+<div id="rabbitone"></div>
+</div>
+<div class="continer">
+	<div id="itemA">
+		<h2>power </h2>
+		<p>100$</p>
+	</div>
+	<div id="itemB">
+		<h2>bomb</h2>
+		<p>300$</p>
+	</div>
+	<div id="itemC">
+		<h2>wall</h2>
+		<p>500$</p>
+	</div>
+</div>
+<!--<div id="one"><h1>rönin</h1></div>-->
+<script type="text/javascript">
+var health = 1000;
+var damge = 10;
+var poe = 0;
+var heel = document.getElementById("health")
+//var name = prompt("hello")
+var enimi = document.getElementById("rabbitone")
+rabbitone.onclick = function (){
+//aaaa
+heel.innerHTML = health
+    health -= damge;
+    console.log(health)
+    //document.getElementById("rabbit").innerHTML = health;
+//bbb
+
+
+if(health < 70){
+//document.body.style.backgroundColor = red;
+document.getElementById("rabbitone").style.backgroundColor ="blue"
+}
+if(health < 30){
+//document.body.style.backgroundColor = red;
+document.getElementById("rabbitone").style.backgroundColor ="red"
+}
+if (health <= 0){
+//document.body.style.backgroundColor = red;
+document.getElementById("rabbitone").style.backgroundColor ="black"
+alert("game over")
+
+}
+coin();
+power();
+
+
+}
+var srf = 0;
+function coin(){
+var coin = document.getElementById("dolar")
+
+
+	srf += 10;
+coin.innerHTML = srf + "$" ;
+}
+//console.log(name)
+/*
+var anim = setInterval(animate,2)
+function animate(){
+poe++;
+enimi.style.left = poe+"px"
+
+}
+*/
+itemA.onclick = function power(){
+ damge = 20;
+ var itemA =100;
+ var ba9i = srf-itemA;
+ document.getElementById("dolar").innerHTML = ba9i;
+}
+itemB.onclick = function bomb(){
+ damge = 50;
+ var itemB =100;
+ var ba9i = srf-itemB;
+ document.getElementById("dolar").innerHTML = ba9i;
+}
+itemC.onclick = function wall(){
+ damge = 100;
+ var itemC =500;
+ var ba9i = srf-itemC;
+ document.getElementById("dolar").innerHTML = ba9i;
+}
+console.log(health)
+</script>
+</body>
+</html>
