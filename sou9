@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>www.souo.com</title> 
+<style type="text/css">
+#one{ 
+height:100px;
+width:100%; 
+background-color:aqua; 
+}
+</style>
+</head> 
+<body>
+<header></header>
+<div id="one"> </div> </body> 
+</html>
