@@ -1,0 +1,12 @@
+/********************* "For test" *******************/
+.test-div{
+	height: 50px;
+	width: 50px;
+	background: red; 
+}
+.test-cyrcle{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background: red;
+}
